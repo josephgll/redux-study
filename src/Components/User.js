@@ -9,10 +9,12 @@ class User extends React.Component{
     return(
       <div>
         <h1>The User Page</h1>
-        <p>Username: {"Gleb"}</p>
+        <p>Username: {this.props.name}</p>
       </div>
     )
   }
 }
+
+
 
   export default User;

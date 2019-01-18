@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class Main extends React.Component{
   constructor(props){
     super(props);
@@ -9,10 +10,12 @@ class Main extends React.Component{
     return(
       <div>
         <h1>The Main Page</h1>
-        <button>Change Username</button>
+        <button onClick={this.props.setName}>Change Username</button>
       </div>
     )
   }
 }
+
+
 
 export default Main;
